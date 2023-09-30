@@ -8,6 +8,7 @@ date: 2023-09-10
 
 ## Working with remote repos
 
+* in GitHub, create a new repo with name & description
 * ```git remote add origin https://github.com/user/repo.git```
 * ```git push origin main```
 * ```git pull origin main```
