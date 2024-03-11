@@ -1,8 +1,6 @@
 ---
 title: Install
 description: Install & set Git
-layout: base
-tags: primary
 date: 2023-09-14
 ---
 

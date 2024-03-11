@@ -1,8 +1,6 @@
 ---
 title: Create
 description: Create or clone a repository
-layout: base
-tags: primary
 date: 2023-09-13
 ---
 

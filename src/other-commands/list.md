@@ -1,8 +1,6 @@
 ---
 title: List
 description: List of Git commands
-layout: base
-tags: secondary
 date: 2023-09-10
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Collaborate
 description: Collaborating with Git & GitHub
-layout: base
-tags: primary
 date: 2023-09-10
 ---
 
