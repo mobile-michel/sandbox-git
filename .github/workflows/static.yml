@@ -1,7 +1,7 @@
-name: Build & Deploy
+name: Build on PR
 
 on:
-  push:
+  pull_request:
     branches: ['main']
 
 jobs:
@@ -25,9 +25,4 @@ jobs:
         run: npm ci
 
       - name: Run npm build
-        run: npm run build:prod
-
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        run: npm run build
