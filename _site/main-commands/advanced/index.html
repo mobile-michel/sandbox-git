@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Michel Maillard">
+  <meta name="description" content="Eleventy to experiment with Git commands">
+  <link rel="icon" href="https://11ty.recipes/images/meta/favicon.svg" type="image/svg+xml">
+  <title>Advanced - Home</title>
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+
+<body>
+  <header style="background-image: url(https://images.pexels.com/photos/1083515/pexels-photo-1083515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); background-size: cover">
+  <nav>
+    <ul>
+      <li><a href="/" style="color: white;background-color: hsla(0, 0%, 45%, 0.705)">Home</a></li>
+      
+    </ul>
+  </nav>
+</header>
+<main>
+    
+    <aside>
+    <nav>
+        <ul>
+            
+            <li><a href="/main-commands/install/">Install</a></li>
+            
+            <li><a href="/main-commands/create/">Create</a></li>
+            
+            <li><a href="/main-commands/changes/">Changes</a></li>
+            
+            <li><a href="/main-commands/branches/">Branches</a></li>
+            
+            <li><a href="/main-commands/github/">Collaborate</a></li>
+            
+            <li><a href="/main-commands/advanced/">Advanced</a></li>
+            
+            
+        </ul>
+    </nav>
+</aside>
+    
+    <h1>Advanced Git techniques</h1>
+    <h2>Resolving merge conflicts</h2>
+<h3>example:</h3>
+<pre><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD
+This is the version in the current branch
+======
+This is the version in the incoming branch
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;incoming-branch
+</code></pre>
+<ol>
+<li>you need to delete the conflict markers and the unwanted lines</li>
+<li>save the file</li>
+<li>mark the file as resolved: <code>git add file.txt</code></li>
+<li>continue the merge: <code>git merge --continue</code></li>
+<li>repeate the process for each file with merge conflict</li>
+<li>complete the merge by commiting the changes: <code>git commit</code></li>
+</ol>
+<h2>Using Git stash to temporarily store changes</h2>
+<ul>
+<li>switch branches without committing the changes</li>
+<li>restore a previous version of your code without committing</li>
+<li>save to the stash and restore the previous version: <code>git stash</code></li>
+<li>view the list of stashed changes: <code>git stash list</code></li>
+<li>restore the stash and leave the stash list: <code>git stash apply stash@{0}</code></li>
+<li>restore the stash &amp; remove from stash list: <code>git stash pop stash@{0}</code></li>
+<li>remove a stash from the stash list: <code>git stash drop stash@{0}</code></li>
+</ul>
+
+</main>
+<footer>
+  <small>&copy; 2024 Built with <a href="https://www.11ty.dev/">Eleventy</a>, <a href="https://liquidjs.com/">LiquidJS</a> & <a href="https://simplecss.org/">Simple.css</a> by <a href="https://michelmaillard.ch/">Michel Maillard</a>.</small>
+</footer>
+</body>
+
+</html>
