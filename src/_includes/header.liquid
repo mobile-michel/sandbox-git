@@ -4,7 +4,7 @@
       <li><a href="/" style="color: white;background-color: hsla(0, 0%, 45%, 0.705)">{{ site.name }}</a></li>
       {% for nav in collections.primary reversed %}
         <li>
-          <a {% if page.url == nav.url %}class="current"{% endif %} href="{{ nav.url }}" style="color: white;background-color: hsla(0, 0%, 45%, 0.705)">{{ nav.data.title }}</a>
+          <a {% if page.url == nav.url %}class="current"{% endif %} href="{{ nav.url | url }}" style="color: white;background-color: hsla(0, 0%, 45%, 0.705)">{{ nav.data.title }}</a>
         </li>
       {% endfor %}
     </ul>
