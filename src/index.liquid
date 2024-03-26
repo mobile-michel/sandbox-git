@@ -4,7 +4,7 @@ description: A collection of resources for using Git and GitHub
 layout: default
 ---
 <ul>
-{% for post in collections.main reversed %}
+{% for post in collections.primary reversed %}
   <li><a href="{{ post.url }}">{{ post.data.description }}</a></li>
 {% endfor %}
 </ul>
@@ -13,6 +13,6 @@ layout: default
 
 <ul>
 {% for post in collections.secondary reversed %}
-  <li><a href="{{ post.url }}">{{ post.data.description }}</a></li>
+  <li><a href="{{ post.url | url }}">{{ post.data.description }}</a></li>
 {% endfor %}
 </ul>
