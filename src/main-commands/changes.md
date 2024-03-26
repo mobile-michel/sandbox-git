@@ -1,8 +1,6 @@
 ---
 title: Changes
 description: Making & tracking changes with Git
-layout: base
-tags: primary
 date: 2023-09-12
 ---
 

@@ -1,0 +1,14 @@
+<aside>
+    <nav>
+        <ul>
+            {% for nav in collections.main reversed %}
+            <li><a href="{{ nav.url | url }}">{{ nav.data.title }}</a></li>
+            {% endfor %}
+            {% if tags contains "secondary" %}
+            {% for nav in collections.secondary reversed %}
+            <li><a href="{{ nav.url | url }}">{{ nav.data.title }}</a></li>
+            {% endfor %}
+            {% endif %}
+        </ul>
+    </nav>
+</aside>

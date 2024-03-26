@@ -1,8 +1,6 @@
 ---
 title: Branches
 description: Create & merge branches
-layout: base
-tags: secondary
 date: 2023-09-06
 ---
 

@@ -1,0 +1,12 @@
+---
+layout: base
+---
+{% include 'header' %}
+<main>
+    {% if tags contains "secondary" or "main" %}
+    {% include 'aside' %}
+    {% endif %}
+    <h1>{{ description }}</h1>
+    {{ content }}
+</main>
+{% include 'footer' %}

@@ -1,8 +1,6 @@
 ---
 title: Branches
 description: Creating & switching between branches
-layout: base
-tags: primary
 date: 2023-09-11
 ---
 

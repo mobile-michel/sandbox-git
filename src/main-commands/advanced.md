@@ -1,8 +1,6 @@
 ---
 title: Advanced
 description: Advanced Git techniques
-layout: base
-tags: primary
 date: 2023-09-10
 ---
 

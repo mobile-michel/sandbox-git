@@ -1,8 +1,6 @@
 ---
 title: Synchronise
 description: Synchronise Changes
-layout: base
-tags: secondary
 date: 2023-09-07
 ---
 

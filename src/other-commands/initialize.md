@@ -1,8 +1,6 @@
 ---
 title: Initialize
 description: Initialize Git
-layout: base
-tags: secondary
 date: 2023-09-08
 ---
 
